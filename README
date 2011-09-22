@@ -1,0 +1,8 @@
+# Make sure you git clone this repo, rename the folder to epic4gtouch and add that folder to /device/samsung/.
+
+# In the root directory. (~/android/system/) run 'make clobber'.
+
+# Then for compiling recovery and creating a signed fake flash recovery zip run:
+
+. build/envsetup.sh && lunch full_epic4gtouch-eng && make signapk -j2 && make recoveryzip
+
